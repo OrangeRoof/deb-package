@@ -1,6 +1,7 @@
 [Unit]
 Description=Miniflux Feed Reader
-After=network.target
+Requires=postgresql.service
+After=network.target postgresql.service
 
 [Service]
 Type=simple
